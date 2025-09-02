@@ -26,7 +26,6 @@ background-color: black;
 color:white;
 `;
 
-/* First two images in one row */
 const FirstRowContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -103,13 +102,10 @@ const Portfolio = () => {
   return (
     <PortfolioContainer id="portfolio">
       <Portfoliotext>Portfolio</Portfoliotext>
-
-      {/* First two images (same size, no center border) */}
       <FirstRowContainer>
         <ImageWrapper href="https://farmtohome.com.pk/" target="_blank">
           <FirstRowImage src={Farmtohome} alt="Project 1" />
           <PortfolioText>Farm to Home</PortfolioText>
-
         </ImageWrapper>
         <ImageWrapper href="https://www.mybahria.com.pk/" target="_blank">
           <FirstRowImage src={Mybaheria} alt="Project 2" />

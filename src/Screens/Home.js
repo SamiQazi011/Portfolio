@@ -6,10 +6,17 @@ import Image2 from "../Images/image2.jpg";
 import Image3 from "../Images/image3.webp";
 import linkedin from"../Images/download.png";
 
-const HomeScreen = () => {
+const HomeScreen = () => { 
+  const handleLearnMore = () => {
+    const section = document.getElementById("mission-section");
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="home-container">
-      {/* First Image Section */}
+      
       <div
         className="first-image-container"
         style={{ backgroundImage: `url(${FirstImage})` }}
@@ -17,13 +24,11 @@ const HomeScreen = () => {
          <div className="overlay"></div> 
         <div className="text-overlay">
           <h1>Rabeea Kainat</h1>
-          <h2>Your journey to excellence in QA</h2>
-          <button className="learn-more-btn">Learn More</button>
+          <h2>Ensuring Excellence with Manual & Automation Testing</h2>
+          <button className="learn-more-btn"  onClick={handleLearnMore} >Learn More</button>
         </div>
       </div>
-
-      {/* Three Other Images Section */}
-      <section className="image-section">
+      <section className="image-section" id="mission-section">
         <div className="image-wrapper">
           <img src={Image1} alt="QA Project 1" />
          
@@ -34,18 +39,15 @@ const HomeScreen = () => {
         <div className="image-wrapper">
           <img src={Image2} alt="QA Project 2" />
           <h1 className="mission-title">About Me</h1>
-          <p className="mission-description">I’m Rabeea Kainat, a *Software QA Engineer with 3 years of experience* in *manual and automation testing, Agile methodologies, documentation, and game testing*. I have a strong understanding of software quality processes and enjoy identifying bugs, improving workflows, and ensuring smooth user experiences. With hands-on experience in game testing and Agile environments, I am always eager to learn and adapt to new challenges in the QA field.</p>
+          <p className="mission-description">I’m Rabeea Kainat, a "Software Quality Assurance Engineer" with 3 years of experience in Manual and Automation testing, Agile methodologies, documentation, and game testing. I have a strong understanding of Software Quality processes and enjoy identifying bugs, improving workflows, and ensuring smooth user experiences. With hands-on experience in game testing and Agile environments, I am always eager to learn and adapt to new challenges in the QA field.</p>
        
         </div>
         <div className="image-wrapper">
           <img src={Image3} alt="QA Project 3" />
           <h1 className="mission-title">Skills</h1>
-          <p className="mission-description">I specialize in *manual and automation testing, including **functional, regression, and API testing. Experienced in **Agile and Scrum, I ensure seamless collaboration and quality assurance. Skilled in **game testing, test planning, and defect management, I use **Zentao, JIRA* for bug tracking and *Cypress, JMeter, Postman, and TestCase Studio* for automation.</p>
-       
+          <p className="mission-description">I specialize in Manual and Automation Testing, with expertise in functional, regression, and API testing. Experienced in Agile and Scrum methodologies, I ensure smooth collaboration and high-quality deliverables. I am skilled in game testing, test planning, and defect management, utilizing tools like Zentao and JIRA for bug tracking, and Cypress, JMeter, Postman, and TestCase Studio for automation.</p>
         </div>
       </section>
-
-      {/* WhatsApp Button */}
       <a
         href="https://www.linkedin.com/in/rabeea-kainat-2472a424b?"
         target="_blank"

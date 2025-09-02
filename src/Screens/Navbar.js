@@ -91,7 +91,7 @@ const Navbar = () => {
         <StyledLink href="/">Home</StyledLink>
         <StyledLink href="portfolio">Portfolio</StyledLink>
         <StyledLink href="aboutme">About Me</StyledLink>
-        <StyledLink href="aboutme">Certificates</StyledLink>
+        <StyledLink href="certificates">Certificates</StyledLink>
       </NavbarLinks>
       {/* <StyledLink href="callnow">Call Now</StyledLink> */}
       <StyledBrand href="/">Rabeea Kainat</StyledBrand>

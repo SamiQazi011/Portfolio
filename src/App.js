@@ -5,7 +5,7 @@ import AboutMe from "./Screens/AboutMe";
 import CallNow from "./Screens/CallNow";
 import Portfolio from "./Screens/Portfolio";
 import Navbar from "./Screens/Navbar";
-import Transitions1 from "./Screens/Transitions1";
+import Certificates from "./Screens/Certificates";
 // import MarkSheet from "./Screens/MarkSheet";
 
 const App = () => {
@@ -17,9 +17,7 @@ const App = () => {
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/callnow" element={<CallNow />} />
         <Route path="/portfolio" element={<Portfolio />} /> 
-        <Route path="/transitions1" element={<Transitions1/>}/>
-        {/* {/* <Route path="/MarkSheet" element={<MarkSheet />} /> */}
-
+        <Route path="/certificates" element={<Certificates/>}/>
       </Routes>
     </Router>
   );
