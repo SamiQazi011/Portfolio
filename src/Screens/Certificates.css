@@ -40,7 +40,7 @@
 .image-wrapper1 img {
   width: 100%;
   height: auto;
-  max-height: 320px;
+  max-height: 420px;
   object-fit: cover;
   border-radius: 10px;
 }
