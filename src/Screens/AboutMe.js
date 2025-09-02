@@ -96,7 +96,7 @@ const AboutMe = () => {
           <h2>About Me</h2>
           <p>
             Welcome! I'm Rabeea Kainat, a Middle QA Engineer at Parashoot with
-            2.5 years of experience in software quality assurance. Specializing in 
+            3 years of experience in software quality assurance. Specializing in 
             Agile Scrum methodologies, I ensure seamless software performance through meticulous testing. 
             Proficient in manual and automation testing, I have hands-on experience with Cypress, JMeter, 
             regression testing, API testing, and game testing. My expertise extends to website testing, 
